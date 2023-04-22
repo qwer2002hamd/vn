@@ -50,6 +50,11 @@ def private_panel(_, BOT_USERNAME, OWNER: Union[bool, int] = None):
         [
             InlineKeyboardButton(
                 text="قناة السورس 🎸", url=f"https://t.me/ah05v"
+             )
+        ],
+        [
+            InlineKeyboardButton(
+                text=_["اللغة ↩️"], callback_data="LG")])
             )
         ],
      ]
