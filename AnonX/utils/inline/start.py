@@ -37,21 +37,6 @@ def start_pannel(_):
 def private_panel(_, BOT_USERNAME, OWNER: Union[bool, int] = None):
     buttons = [
         [InlineKeyboardButton(text=_["S_B_8"], callback_data="settings_back_helper")]
-    ]
-    if SUPPORT_CHANNEL: 
-        buttons.append(
-            [
-                InlineKeyboardButton(text=_["S_B_4"], url=f"{SUPPORT_CHANNEL}")] 
-            ]
-        )
-    else:
-        if SUPPORT_CHANNEL:
-            buttons.append(
-                [InlineKeyboardButton(text=_["S_B_4"], url=f"{SUPPORT_CHANNEL}")]
-            )
-        if SUPPORT_GROUP:
-            buttons.append(
-                [InlineKeyboardButton(text=_["S_B_3"], url=f"{SUPPORT_GROUP}")]
             )
     buttons.append(
         [
