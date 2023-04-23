@@ -4,8 +4,8 @@ import random
 import telebot
 from datetime import date ,timedelta ,time
 import time 
-ssss = '5024278507'
-bot = telebot.TeleBot("5496942470:AAFwqnSzxHMkHhr8uge395ghpiXwAyIHzj0")
+ssss = '1748768168'
+bot = telebot.TeleBot("6285659665:AAGZvJZmLPpPjFYav6W31poajqz-Sc-mAMw")
 p3 = types.InlineKeyboardMarkup()
 p5 = types.InlineKeyboardButton(text = "[!] 𝗚𝗛𝗢𝗦𝗧 ^ 𝗦𝗢𝗨𝗥𝗖𝗘 🇰🇼",url="t.me/pjpppppp")
 A1 = types.InlineKeyboardButton(text = "اوامر الحماية .",callback_data="A1")
