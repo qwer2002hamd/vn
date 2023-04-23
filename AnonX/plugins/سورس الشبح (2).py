@@ -29,12 +29,6 @@ from AnonX.utils.inline import (help_pannel, private_panel,
 
 loop = asyncio.get_running_loop()
 
-p3 = types.InlineKeyboardMarkup()
-p5 = types.InlineKeyboardButton(text = "[!] 𝗚𝗛𝗢𝗦𝗧 ^ 𝗦𝗢𝗨𝗥𝗖𝗘 🇰🇼",url="t.me/pjpppppp")
-A1 = types.InlineKeyboardButton(text = "اوامر الحماية .",callback_data="A1")
-A2 = types.InlineKeyboardButton(text = "اوامر التسلية .",callback_data="A2")
-A3 = types.InlineKeyboardButton(text = "اوامر الالعاب .",callback_data="A3")
-A4 = types.InlineKeyboardButton(text = "اوامر الموسيقى ",callback_data="A4")
 
 @bot.message_handler(commands=['start', 'help'])
 def send_welcome(message):
