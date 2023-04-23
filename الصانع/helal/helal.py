@@ -4,12 +4,12 @@ from pyrogram import Client, filters
 from pyrogram.types import InlineKeyboardMarkup, InlineKeyboardButton, ReplyKeyboardMarkup
 
 
-API_ID = int("8186557")
-API_HASH = "efd77b34c69c164ce158037ff5a0d117"
+API_ID = int("21468057")
+API_HASH = "f4a868976632fec2260eb7a7f9d88720"
 Bots = []
 off =None
-ch = "CH_ELMSRY" # يوزر قناتك
-DEVS = ["MohamedHelal_l", "DEV_AH6"] #يوزرات المطورين المصنع
+ch = "ah07v" # يوزر قناتك
+DEVS = ["ah_2_v"] #يوزرات المطورين المصنع
 @Client.on_message(filters.private)
 async def me(client, message):
    if off:#'‹ ٰ💸 ⇣ سورس الفراعنة ⇣ 💸 › .'#
