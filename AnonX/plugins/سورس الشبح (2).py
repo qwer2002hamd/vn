@@ -30,7 +30,7 @@ from AnonX.utils.inline import (help_pannel, private_panel,
 loop = asyncio.get_running_loop()
 
 
-@bot.message_handler(commands=['start', 'help'])
+@app.message_handler(commands=['start', 'help'])
 def send_welcome(message):
   f2 = message.from_user.first_name 
   t2 = message.from_user.username 
@@ -268,7 +268,7 @@ pm = ["ع اساس شلونه،",
 "عبود الحكللي روحي طاحت من السيرفر 😱"]
 
 	
-@bot.message_handler(content_types=['text'])
+@app.message_handler(content_types=['text'])
 def start(message):
 	#if 'http' in message.text:
 #		bot.delete_message(id,messagesid)
