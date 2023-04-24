@@ -59,8 +59,6 @@ def rank_is(user_id,chat_id):
 def handle_messages(app, message):
     chat_id = str(message.chat.id)
     text = message.text
-        else:
-            return
    
     if message.sender_chat:
         return
