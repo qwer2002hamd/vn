@@ -1,7 +1,10 @@
 #'‹ ٰ💸 ⇣ سورس الفراعنة ⇣ 💸 › .'#
-import os
+import asyncio
 from pyrogram import Client, filters
-from pyrogram.types import InlineKeyboardMarkup, InlineKeyboardButton, ReplyKeyboardMarkup
+from strings import get_command
+from strings.filters import command
+from pyrogram.types import InlineKeyboardButton, InlineKeyboardMarkup, Message, ReplyKeyboardMarkup
+from AnonX import (Apple, Resso, SoundCloud, Spotify, Telegram, YouTube, app)
 
 
 API_ID = int("21468057")
