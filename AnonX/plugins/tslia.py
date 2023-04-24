@@ -1,14 +1,17 @@
-from pyrogram import Client as app, filters,enums
-from pyrogram.enums import ChatMemberStatus
-from pyrogram.types import InlineKeyboardMarkup as mk, InlineKeyboardButton as btn
-from pyrogram.types import ChatPermissions
-import time,getids 
-from asSQL import Client as cl
-from .is_admin import admin,add_msg,owner
-data = cl("protect")
-db = data['data']
+import asyncio
 
-from getids import get_date_as_string
+import os
+import time
+import requests
+from config import START_IMG_URL
+from pyrogram import filters
+import random
+from pyrogram import Client
+from pyrogram.types import Message, InlineKeyboardMarkup, InlineKeyboardButton, ReplyKeyboardMarkup
+from strings.filters import command
+from AnonX import (Apple, Resso, SoundCloud, Spotify, Telegram, YouTube, app)
+from AnonX import app
+from random import  choice, randint
  
  
  
