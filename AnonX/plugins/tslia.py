@@ -59,8 +59,6 @@ def rank_is(user_id,chat_id):
 def handle_messages(app, message):
     chat_id = str(message.chat.id)
     text = message.text
-    if text:
-        if db.get(f"group_{message.chat.id}') == 1:
             pass
         else:
             return
