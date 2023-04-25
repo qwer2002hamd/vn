@@ -170,7 +170,6 @@ async def gettt_rd(app, message):
    
 app.start()
 print("Lol")
-idle()
 
 '''
 Programmed by : 🎖️ @ah_2_v
