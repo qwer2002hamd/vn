@@ -76,17 +76,3 @@ async def get_rdodd(app,message):
 Programmed by : 🎖️ @ah_2_v
    Channel -› • @ah07v
 '''
-@app.on_message(filters.text & filters.group, group=1)
-async def gettt_rd(app, message):
-   a = get_rd(message.text, message.chat.id)
-   if a: return await app.copy_message(message.chat.id, LOG, a, reply_to_message_id=message.id)
-   else: return 
-   
-   
-app.start()
-print("Lol")
-
-'''
-Programmed by : 🎖️ @ah_2_v
-   Channel -› • @ah07v
-'''
