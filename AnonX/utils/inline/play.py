@@ -43,29 +43,29 @@ def stream_markup_timer(_, videoid, chat_id, played, dur):
         ],
         [
             InlineKeyboardButton(
-                text="كمل",
+                text="استئناف التشغيل ▷",
                 callback_data=f"ADMIN Resume|{chat_id}",
             ),
             InlineKeyboardButton(
-                text="وقف", callback_data=f"ADMIN Pause|{chat_id}"
+                text="ايقاف مؤقت II", callback_data=f"ADMIN Pause|{chat_id}"
             ),
         ],
         [
             InlineKeyboardButton(
-                text="قائمة التشغيل", callback_data=f"add_playlist {videoid}"
+                text="قائمة التشغيل ⚡", callback_data=f"add_playlist {videoid}"
             ),
         ],
         [
             InlineKeyboardButton(
-                text="تخطي", callback_data=f"ADMIN Skip|{chat_id}"
+                text="تخطي التشغيل ‣‣I", callback_data=f"ADMIN Skip|{chat_id}"
             ),
             InlineKeyboardButton(
-                text="ايقاف", callback_data=f"ADMIN Stop|{chat_id}"
+                text="ايقاف التشغيل ▢", callback_data=f"ADMIN Stop|{chat_id}"
             ),
         ],
         [
             InlineKeyboardButton(
-                text="✯ حذف ✯", callback_data=f"close"
+                text="حذف 🗑", callback_data=f"close"
             )
         ],
     ]
@@ -107,24 +107,24 @@ def telegram_markup_timer(_, chat_id, played, dur):
         ],
         [
             InlineKeyboardButton(
-                text="كمل",
+                text="استئناف التشغيل ▷",
                 callback_data=f"ADMIN Resume|{chat_id}",
             ),
             InlineKeyboardButton(
-                text="وقف", callback_data=f"ADMIN Pause|{chat_id}"
+                text="ايقاف مؤقت II", callback_data=f"ADMIN Pause|{chat_id}"
             ),
         ],
         [
             InlineKeyboardButton(
-                text="تخطي", callback_data=f"ADMIN Skip|{chat_id}"
+                text="تخطي التشغيل ‣‣I", callback_data=f"ADMIN Skip|{chat_id}"
             ),
             InlineKeyboardButton(
-                text="ايقاف", callback_data=f"ADMIN Stop|{chat_id}"
+                text="ايقاف التشغيل ▢", callback_data=f"ADMIN Stop|{chat_id}"
             ),
         ],
         [
             InlineKeyboardButton(
-                text="✯ حذف ✯", callback_data=f"close"
+                text="حذف 🗑", callback_data=f"close"
             )
         ],
     ]
@@ -135,29 +135,29 @@ def stream_markup(_, videoid, chat_id):
     buttons = [
         [
             InlineKeyboardButton(
-                text="كمل",
+                text="استئناف التشغيل ▷",
                 callback_data=f"ADMIN Resume|{chat_id}",
             ),
             InlineKeyboardButton(
-                text="وقف", callback_data=f"ADMIN Pause|{chat_id}"
+                text="ايقاف مؤقت II", callback_data=f"ADMIN Pause|{chat_id}"
             ),
         ],
         [
             InlineKeyboardButton(
-                text="قائمة التشغيل", callback_data=f"add_playlist {videoid}"
+                text="قائمة التشغيل ⚡", callback_data=f"add_playlist {videoid}"
             ),
         ],
         [
             InlineKeyboardButton(
-                text="تخطي", callback_data=f"ADMIN Skip|{chat_id}"
+                text="تخطي التشغيل ‣‣I", callback_data=f"ADMIN Skip|{chat_id}"
             ),
             InlineKeyboardButton(
-                text="ايقاف", callback_data=f"ADMIN Stop|{chat_id}"
+                text="ايقاف التشغيل ▢", callback_data=f"ADMIN Stop|{chat_id}"
             ),
         ],
         [
             InlineKeyboardButton(
-                text="✯ حذف ✯", callback_data=f"close"
+                text="حذف 🗑", callback_data=f"close"
             )
         ],
     ]
@@ -168,24 +168,24 @@ def telegram_markup(_, chat_id):
     buttons = [
         [
             InlineKeyboardButton(
-                text="كمل",
+                text="استئناف التشغيل ▷",
                 callback_data=f"ADMIN Resume|{chat_id}",
             ),
             InlineKeyboardButton(
-                text="وقف", callback_data=f"ADMIN Pause|{chat_id}"
+                text="ايقاف مؤقت II", callback_data=f"ADMIN Pause|{chat_id}"
             ),
         ],
         [
             InlineKeyboardButton(
-                text="تخطي", callback_data=f"ADMIN Skip|{chat_id}"
+                text="تخطي التشغيل ‣‣I", callback_data=f"ADMIN Skip|{chat_id}"
             ),
             InlineKeyboardButton(
-                text="ايقاف", callback_data=f"ADMIN Stop|{chat_id}"
+                text="ايقاف التشغيل ▢", callback_data=f"ADMIN Stop|{chat_id}"
             ),
         ],
         [
             InlineKeyboardButton(
-                text="✯ حذف ✯", callback_data=f"close"
+                text="حذف 🗑", callback_data=f"close"
             )
         ],
     ]
@@ -301,7 +301,7 @@ close_keyboard = InlineKeyboardMarkup(
             [
                 [
                     InlineKeyboardButton(
-                        text="✯ حذف ✯", callback_data="close"
+                        text="حذف 🗑", callback_data="close"
                     )
                 ]    
             ]
@@ -314,29 +314,29 @@ def queue_markup(_, videoid, chat_id):
     buttons = [
         [
             InlineKeyboardButton(
-                text="كمل",
+                text="استئناف التشغيل ▷",
                 callback_data=f"ADMIN Resume|{chat_id}",
             ),
             InlineKeyboardButton(
-                text="وقف", callback_data=f"ADMIN Pause|{chat_id}"
+                text="ايقاف مؤقت II", callback_data=f"ADMIN Pause|{chat_id}"
             ),
         ],
         [
             InlineKeyboardButton(
-                text="قائمة التشغيل", callback_data=f"add_playlist {videoid}"
+                text="قائمة التشغيل ⚡", callback_data=f"add_playlist {videoid}"
             ),
         ],
         [
             InlineKeyboardButton(
-                text="تخطي", callback_data=f"ADMIN Skip|{chat_id}"
+                text="تخطي التشغيل ‣‣I", callback_data=f"ADMIN Skip|{chat_id}"
             ),
             InlineKeyboardButton(
-                text="ايقاف", callback_data=f"ADMIN Stop|{chat_id}"
+                text="ايقاف التشغيل ▢", callback_data=f"ADMIN Stop|{chat_id}"
             ),
         ],
         [
             InlineKeyboardButton(
-                text="✯ حذف ✯", callback_data=f"close"
+                text="حذف 🗑", callback_data=f"close"
             )
         ],
     ]
