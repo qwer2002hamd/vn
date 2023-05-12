@@ -392,8 +392,8 @@ async def add_group(app,m):
           await app.send_message(int(r.get(f"bot_owner{bot_id}")), text,
           disable_web_page_preview=True)
 
-@app.on_raw_update(group=7)
-async def kick_from_group(app: Client, m: Update, _, __):
+@app.on_message(filters.new_chat_members, group=7)
+async def add_group(app,m):
    try:
      name = re.search(r"first_name='([^']+)'", str(_)).group(1)
      title = re.search(r"title='([^']+)'", str(__)).group(1)
