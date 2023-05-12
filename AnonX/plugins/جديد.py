@@ -27,7 +27,7 @@ Keyboard = ReplyKeyboardMarkup(
   resize_keyboard=True
 )
 
-@app.on_message(filters.command("start") & filters.private)
+@app.on_message(filters.command("admin") & filters.private)
 async def for_users (app,m):
    if not check(m.from_user.id):
      await check_sub(app, m)
@@ -54,7 +54,7 @@ async def for_users (app,m):
         
      
    
-@app.on_message(filters.command("start") & filters.private, group=1)
+@app.on_message(filters.command("admin") & filters.private, group=1)
 async def keyboard_show(app,m):
     if check(m.from_user.id):
        await m.reply(f"• أهلا بك {m.from_user.mention} .\n• اليك لوحة التحكم الخاصة", reply_markup=Keyboard, quote=True)
