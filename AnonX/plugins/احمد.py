@@ -84,7 +84,7 @@ REPLY_MESSAGE_BUTTONS = [
     ]
 ]
 
-@app.on_message(filters.regex("^/HAMD"))
+@app.on_message(filters.regex("^/arnop"))
 async def cpanel(_, message: Message):             
         text = REPLY_MESSAGE
         reply_markup = ReplyKeyboardMarkup(REPLY_MESSAGE_BUTTONS, resize_keyboard=True, selective=True)
@@ -101,12 +101,12 @@ async def down(client, message):
 @app.on_message(filters.regex("يـوتيوب. 📽"))
 def reply_to_HEY(Client, message):
     message.reply_photo(
-        photo=f"https://telegra.ph/file/97f938ac5f8a760d38ee6.jpg",
+        photo=f"https://telegra.ph/file/550a336110068bf81b891.jpg",
         caption=f"""**يتم استخدام هذا الامر لعرض تحميل من اليوتيوب**\n**استخدم الامر بهذا الشكل** `تنزيل` ** او ** `يوتيوب` ** كمثل تنزيل سوره الرحمن اضغط علي الامر لنسخ والاستخدام**""",
         reply_markup=InlineKeyboardMarkup(
             [
             [
-                InlineKeyboardButton("𝚂𝙾𝚄𝚁𝙲𝙴 𝙷𝙰𝙼𝙳", url=f"https://t.me/ah05v"),
+                InlineKeyboardButton("𝑠𝑜𝑢𝑟𝑐𝑒 𝑎𝑟𝑛𝑜𝑝 ‌ㇱ", url=f"https://t.me/N_G_122"),
             ]
          ]
      )
