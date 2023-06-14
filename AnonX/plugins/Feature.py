@@ -39,7 +39,7 @@ from random import  choice, randint
  )
 async def mmmezat(client, message):
         await message.reply_text(f"""**مرحبآ بك عزيزي » {message.from_user.mention}**في قسم مميزات سورس الميوزك\n
-    ★⊷⧼𝚂𝙾𝚄𝚁𝙲𝙴 𝙷𝙰𝙼𝙳⧽⊶★
+    ★⊷⧼𝑠𝑜𝑢𝑟𝑐𝑒 𝑎𝑟𝑛𝑜𝑝 ‌ㇱ⧽⊶★
   
 ◉︙المطور ↫لعمل نداء لمطور البوت
 ◉︙ايدي ↫لعرض معلومات حسابك مع الصوره
@@ -62,12 +62,12 @@ async def mmmezat(client, message):
 ◉︙الترحيب ↫يرحيب بالاعضاء عند. الدخول والمغادره
 ◉︙المغادره ↫النزول من الاتصال لعدم وجود احد
 ◉︙ستوري، صوره، قران، الشيخ، افتار شباب، افتار بنات، انمي، اقتباس، متحركه، افلام، جمالي، اسمي، جمالي، هيدرات، لو خيروك، كت،صراحه،اسالني
-    ★⊷⧼𝚂𝙾𝚄𝚁𝙲𝙴 𝙷𝙰𝙼𝙳⧽⊶★""",
+    ★⊷⧼𝑠𝑜𝑢𝑟𝑐𝑒 𝑎𝑟𝑛𝑜𝑝 ‌ㇱ⧽⊶★""",
         reply_markup=InlineKeyboardMarkup(
             [
                 [
                     InlineKeyboardButton(
-                        "𝚂𝙾𝚄𝚁𝙲𝙴 𝙷𝙰𝙼𝙳", url=f"https://t.me/ah05v"),                        
+                        "𝑠𝑜𝑢𝑟𝑐𝑒 𝑎𝑟𝑛𝑜𝑝 ‌ㇱ", url=f"https://t.me/N_G_122"),                        
                  ],[
                 InlineKeyboardButton(
                         "☆ اغلاق ☆", callback_data="close"),
