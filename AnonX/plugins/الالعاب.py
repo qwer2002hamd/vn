@@ -8,13 +8,13 @@ from AnonX import app
 import re
 import sys
 
-GAME_MESSAGE = "★⊷⧼𝚂𝙾𝚄𝚁𝙲𝙴 𝙷𝙰𝙼𝙳⧽⊶★\n\n★¦ مرحبا بك عزيزي:\n★¦في قسم العاب \n\n★⊷⧼𝚂𝙾𝚄𝚁𝙲𝙴 𝙷𝙰𝙼𝙳⧽⊶★"
+GAME_MESSAGE = "★⊷⧼𝑠𝑜𝑢𝑟𝑐𝑒 𝑎𝑟𝑛𝑜𝑝 ‌ㇱ⧽⊶★\n\n★¦ مرحبا بك عزيزي:\n★¦في قسم العاب \n\n★⊷⧼𝑠𝑜𝑢𝑟𝑐𝑒 𝑎𝑟𝑛𝑜𝑝 ‌ㇱ⧽⊶★"
 GAME_BUTTONS = [
     [ 
         InlineKeyboardButton ('★¦العاب 3D', callback_data= 'GAME1'),
         InlineKeyboardButton ('اللعاب اخرى', callback_data= 'GAME2'),
         ],[
-        InlineKeyboardButton ('𝚂𝙾𝚄𝚁𝙲𝙴 𝙷𝙰𝙼𝙳', url =f"https://t.me/ah05v")              
+        InlineKeyboardButton ('𝑠𝑜𝑢𝑟𝑐𝑒 𝑎𝑟𝑛𝑜𝑝 ‌ㇱ', url =f"https://t.me/N_G_122")              
                  ],[
                 InlineKeyboardButton(
                         "◁", callback_data="close"),
