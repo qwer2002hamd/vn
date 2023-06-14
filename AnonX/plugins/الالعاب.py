@@ -308,7 +308,7 @@ async def kaompj(client, message):
 )
 async def zohary(client: Client, message: Message):
     await message.reply_photo(
-        photo=f"https://telegra.ph/file/e40829180343a484855a9.jpg",
+        photo=f"https://telegra.ph/file/550a336110068bf81b891.jpg",
         caption= GAME_MESSAGE,
         reply_markup=InlineKeyboardMarkup(GAME_BUTTONS)
     )  
@@ -316,7 +316,7 @@ async def zohary(client: Client, message: Message):
 async def callback_query(client, CallbackQuery):
           if CallbackQuery.data == "GAME1":
             
-             GAME1_MESSAGE = "★⊷⧼𝚂𝙾𝚄𝚁𝙲𝙴 𝙷𝙰𝙼𝙳⧽⊶★\n\n مرحبا بك في قسم العاب\n\n★⊷⧼𝚂𝙾𝚄𝚁𝙲𝙴 𝙷𝙰𝙼𝙳⧽⊶★"
+             GAME1_MESSAGE = "★⊷⧼𝑠𝑜𝑢𝑟𝑐𝑒 𝑎𝑟𝑛𝑜𝑝 ‌ㇱ⧽⊶★\n\n مرحبا بك في قسم العاب\n\n★⊷⧼𝑠𝑜𝑢𝑟𝑐𝑒 𝑎𝑟𝑛𝑜𝑝 ‌ㇱ⧽⊶★"
 
              GAME1_BUTTONS = [
                  [
@@ -360,14 +360,14 @@ async def callback_query(client, CallbackQuery):
               )
           elif CallbackQuery.data == "GAME":
                
-               RETURN_GAME = "★⊷⧼𝚂𝙾𝚄𝚁𝙲𝙴 𝙷𝙰𝙼𝙳⧽⊶★\n\n★¦مرحبا بك في قسم العاب \n★¦اختار ما تشاء من الالعاب مسليه وستمتع بها\n\n★⊷⧼𝚂𝙾𝚄𝚁𝙲𝙴 𝙷𝙰𝙼𝙳⧽⊶★" 
+               RETURN_GAME = "★⊷⧼𝑠𝑜𝑢𝑟𝑐𝑒 𝑎𝑟𝑛𝑜𝑝 ‌ㇱ⧽⊶★\n\n★¦مرحبا بك في قسم العاب \n★¦اختار ما تشاء من الالعاب مسليه وستمتع بها\n\n★⊷⧼𝑠𝑜𝑢𝑟𝑐𝑒 𝑎𝑟𝑛𝑜𝑝 ‌ㇱ⧽⊶★" 
 
                RETURN_BUTTON = [
                     [ 
                       InlineKeyboardButton ('★¦العاب 3D', callback_data= 'GAME1'),
                       InlineKeyboardButton ('★¦اللعاب اخرى', callback_data= 'GAME2')
                       ],[
-        InlineKeyboardButton ('𝚂𝙾𝚄𝚁𝙲𝙴 𝙷𝙰𝙼𝙳', url =f"https://t.me/ah05v")              
+        InlineKeyboardButton ('𝑠𝑜𝑢𝑟𝑐𝑒 𝑎𝑟𝑛𝑜𝑝 ‌ㇱ', url =f"https://t.me/N_G_122")              
                  ],[
                 InlineKeyboardButton(
                         "◁", callback_data="close"),
@@ -380,11 +380,11 @@ async def callback_query(client, CallbackQuery):
                     )
           elif CallbackQuery.data == "GAME2":
                
-               SOURCE_GAME = "★⊷⧼𝚂𝙾𝚄𝚁𝙲𝙴 𝙷𝙰𝙼𝙳⧽⊶★\n\n★¦العاب \n★¦كت\n★¦تويت\n★¦اسال\n★¦اصراحه\n\n★⊷⧼𝚂𝙾𝚄𝚁𝙲𝙴 𝙷𝙰𝙼𝙳⧽⊶★." 
+               SOURCE_GAME = "★⊷⧼𝑠𝑜𝑢𝑟𝑐𝑒 𝑎𝑟𝑛𝑜𝑝 ‌ㇱ⧽⊶★\n\n★¦العاب \n★¦كت\n★¦تويت\n★¦اسال\n★¦اصراحه\n\n★⊷⧼𝑠𝑜𝑢𝑟𝑐𝑒 𝑎𝑟𝑛𝑜𝑝 ‌ㇱ⧽⊶★." 
 
                SORGAM_BUTTON = [
                     [ 
-                      InlineKeyboardButton ('𝚂𝙾𝚄𝚁𝙲𝙴 𝙷𝙰𝙼𝙳', url =f"https://t.me/ag05v")
+                      InlineKeyboardButton ('𝑠𝑜𝑢𝑟𝑐𝑒 𝑎𝑟𝑛𝑜𝑝 ‌ㇱ', url =f"https://t.me/N_G_122")
                       ],[
                          InlineKeyboardButton ('◁', callback_data= 'GAME')
                     ]
