@@ -58,20 +58,15 @@ async def huhh(client: Client, message: Message):
         caption=f"""**★⊷⧼𝑠𝑜𝑢𝑟𝑐𝑒 𝑎𝑟𝑛𝑜𝑝 ‌ㇱ⧽⊶★**\nمرحبا بك عزيزي {message.from_user.mention} في قسم مطور سورس ميوزك\nللتحدث مع مطور السورس اضغط علي الازرار بالاسفل👇\n**★⊷⧼𝑠𝑜𝑢𝑟𝑐𝑒 𝑎𝑟𝑛𝑜𝑝 ‌ㇱ⧽⊶★**""",
         reply_markup=InlineKeyboardMarkup(
             [
-                [
-                    InlineKeyboardButton(
-                text="•المطور•", user_id=OWNER 
-                 ), 
-                   InlineKeyboardButton(
-                        "𝑠𝑜𝑢𝑟𝑐𝑒 𝑎𝑟𝑛𝑜𝑝 ‌ㇱ", url=f"https://t.me/N_G_122"),
-                ],
-
-            ]
-
-        ),
-
-    )
-
+                InlineKeyboardButton(
+                text="مطور البوت 👨‍💻", user_id=OWNER
+            ), 
+            InlineKeyboardButton(
+                text="𝑠𝑜𝑢𝑟𝑐𝑒 𝑎𝑟𝑛𝑜𝑝 ‌ㇱ", url=f"https://t.me/N_G_122"
+            )
+        ],
+     ]
+    return buttons
 
 
 
