@@ -32,7 +32,7 @@ async def huhh(client: Client, message: Message):
             [
                 [
                     InlineKeyboardButton(
-                text="•المطور•", user_id=OWNER 
+                        "𓏺𝓷𝓪𝓭𝓮𝓻 ∥ 𓏺نِاެدَࢪ 🪐", url=f"https://t.me/Ng_103"), 
                  ],[
                    InlineKeyboardButton(
                         "𝑠𝑜𝑢𝑟𝑐𝑒 𝑎𝑟𝑛𝑜𝑝 ‌ㇱ", url=f"https://t.me/N_G_122"),
@@ -61,7 +61,7 @@ async def huhh(client: Client, message: Message):
                 [
                     InlineKeyboardButton(
                 text="•المطور•", user_id=OWNER 
-                 ],[
+                 ), 
                    InlineKeyboardButton(
                         "𝑠𝑜𝑢𝑟𝑐𝑒 𝑎𝑟𝑛𝑜𝑝 ‌ㇱ", url=f"https://t.me/N_G_122"),
                 ],
