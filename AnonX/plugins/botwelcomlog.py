@@ -25,6 +25,6 @@ async def on_new_chat_members(client: Client, message: Message):
         if message.chat.username:
             chatusername = f"@{message.chat.username}"
         else:
-            chatusername = "ᴩʀɪᴠᴀᴛᴇ ᴄʜᴀᴛ"
+            chatusername = "‹ مـعلومات المجموعة ›"
         lemda_text = f"🌹 تم اضافة البوت لجروب جديد ..\n\n┏━━━━━━━━━━━━━━━━━┓\n┣★ **الدردشة** › : {matlabi_jhanto}\n┣★ **ايدي الدردشة** › : {chat_id}\n┣★ **يوزر الدردشه** › : {chatusername}\n┣★ **مجموع الدردشات** › : {served_chats}\n┣★ **اضيف بواسطة** › :\n┗━━━ {added_by}"
         await lul_message(LOG_GROUP_ID, lemda_text)
