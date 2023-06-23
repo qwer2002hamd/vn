@@ -169,7 +169,7 @@ async def ihd(client: Client, message: Message):
         )
     )
 
-@app.on_message(command(["غ","غغ"]))
+@app.on_message(command(["اغنيه","غغ"]))
 async def ihd(client: Client, message: Message):
     rl = random.randint(1,50)
     url = f"https://t.me/bsmaatt/{rl}"
@@ -184,7 +184,7 @@ async def ihd(client: Client, message: Message):
         )
     )
 
-@app.on_message(command(["استوري", "استوريهات. 🥹"]))
+@app.on_message(command(["استوري", "استوريهات"]))
 async def ihd(client: Client, message: Message):
     rl = random.randint(1,50)
     url = f"https://t.me/yoipopl/{rl}"
@@ -200,3 +200,19 @@ async def ihd(client: Client, message: Message):
     )
 
     
+@app.on_message(command(["تت", "كت بالصوره"]))
+async def ihd(client: Client, message: Message):
+    rl = random.randint(2,50)
+    url = f"https://t.me/cat_tuet/{rl}"
+    await client.send_audio(message.chat.id,url,caption="كت بالصوره 🥺❤",parse_mode="html",
+    reply_markup=InlineKeyboardMarkup(
+            [
+                [
+                    InlineKeyboardButton(
+                        message.from_user.first_name, url=f"https://t.me/{message.from_user.username}")
+                ],
+            ]
+        )
+    )
+
+
