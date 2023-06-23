@@ -33,7 +33,7 @@ PLAY_COMMAND = get_command("PLAY_COMMAND")
 
 @app.on_message(
     command(PLAY_COMMAND)
-    & filters.group
+    & ~filters.edited
     & ~BANNED_USERS
 )
 @PlayWrapper
@@ -498,6 +498,7 @@ async def play_commnd(
 
 @app.on_message(
     command(["/play", "/vplay", "play", "vplay", "شغل", "تشغيل", "فديو", "فيديو"])
+    & ~filters.edited
     & filters.channel
     & ~BANNED_USERS
 )
@@ -520,8 +521,8 @@ async def play_commnd(
     slider = None
     plist_type = None
     spotify = None
-    user_id = None
-    user_name = None
+    user_id = message.from_user.id if message.from_user else "1748768168"
+    user_name = message.from_user.first_name if message.from_user else "None"
     audio_telegram = (
         (
             message.reply_to_message.audio
