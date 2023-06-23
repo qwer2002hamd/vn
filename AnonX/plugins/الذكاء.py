@@ -16,13 +16,13 @@ from pyrogram.errors import MessageNotModified
 
 
 @app.on_message(
-    filters.command("sn")
+    filters.command("الذكاء الاصطناعي")
     
 )
 async def cr_source(client: Client, message: Message):
     await message.reply_photo(
-        photo=f"https://telegra.ph/file/e40829180343a484855a9.jpg",
-        caption=f"""**★⊷⧼𝚂𝙾𝚄𝚁𝙲𝙴 𝙷𝙰𝙼𝙳⧽⊶★**\nمرحبا بك عزيزي {message.from_user.mention}\nانا بوت الذكاء الاصطناعي \nلمعرفة الاوامر اضغط على الأزرار بالأسفل👇\n**★⊷⧼𝚂𝙾𝚄𝚁𝙲𝙴 𝙷𝙰𝙼𝙳⧽⊶★**""",
+        photo=f"https://telegra.ph/file/550daebd925be5fd35342.jpg",
+        caption=f"""مرحبا بك عزيزي {message.from_user.mention}\nانا بوت الذكاء الاصطناعي \nلمعرفة الاوامر اضغط على الأزرار بالأسفل👇""",
         reply_markup=InlineKeyboardMarkup(
             [
                 [
@@ -32,11 +32,7 @@ async def cr_source(client: Client, message: Message):
                     InlineKeyboardButton(
                         "𝑌.𝑂²¹ ͢͢➛ℍ𝗺!ِٰ𝗱♪", url=f"https://t.me/ah_2_v"),
                     InlineKeyboardButton(
-                        "قناة البوت", url=f"https://t.me/ah07v"),
-                ],[
-                
-                    InlineKeyboardButton(
-                        "𝚂𝙾𝚄𝚁𝙲𝙴 𝙷𝙰𝙼𝙳", url=f"https://t.me/ah05v"),
+                        "‹ قـناة الـسورس ›", url=f"https://t.me/ah07v"),
                 ],
 
             ]
@@ -50,12 +46,12 @@ async def cr_source(client: Client, message: Message):
 async def cr_usage(_, callback_query: CallbackQuery):
     await callback_query.answer()
     await callback_query.message.edit_text(
-        text="""**★⊷⧼𝚂𝙾𝚄𝚁𝙲𝙴 𝙷𝙰𝙼𝙳⧽⊶★**
+        text="""
 ★¦ اهلا بك عزيزي في قسم الأوامر
 ★¦ لتتمكن من تشغيل الذكاء الاصطناعي فقط اكتب
 ★¦ /gpt - لـلـسـؤال آي سـؤال بالـذكـاء الاسـطـناعي
 
-**★⊷⧼𝚂𝙾𝚄𝚁𝙲𝙴 𝙷𝙰𝙼𝙳⧽⊶★**""",
+""",
         reply_markup=InlineKeyboardMarkup(
             [
                 [
@@ -75,7 +71,6 @@ async def cr_back(_, callback_query: CallbackQuery):
         [
             [InlineKeyboardButton("طريقة الإستخدام", callback_data="usage")],
             [InlineKeyboardButton("𝑌.𝑂²¹ ͢͢➛ℍ𝗺!ِٰ𝗱♪", url=f"https://t.me/ah_2_v"),
-             InlineKeyboardButton("قناة البوت", url=f"https://t.me/ah07v")],
-            [InlineKeyboardButton("𝚂𝙾𝚄𝚁𝙲𝙴 𝙷𝙰𝙼𝙳", url=f"https://t.me/ah05v")],
+             InlineKeyboardButton("‹ قـناة الـسورس ›", url=f"https://t.me/ah07v")],
         ]
     ))
