@@ -12,55 +12,6 @@ from AnonX import app
 from asyncio import gather
 
 
-@app.on_message(command(["تلغراف", "تلغراف ميديا", "ميديا"]) & ~filters.edited)
-async def telegraph(client: Client, message: Message):
-    replied = message.reply_to_message
-    if not replied:
-        await message.reply("🤕 ¦ الرد على ملف وسائط مدعوم\n• حط صوره و اكتب عليها 00")
-        return
-    if not (
-        (replied.photo and replied.photo.file_size <= 5242880)
-        or (replied.animation and replied.animation.file_size <= 5242880)
-        or (
-            replied.video
-            and replied.video.file_name.endswith(".mp4")
-            and replied.video.file_size <= 5242880
-        )
-        or (
-            replied.document
-            and replied.document.file_name.endswith(
-                (".jpg", ".jpeg", ".png", ".gif", ".mp4"),
-            )
-            and replied.document.file_size <= 5242880
-        )
-    ):
-        await message.reply("غير مدعوم!!")
-        return
-    download_location = await client.download_media(
-        message=message.reply_to_message,
-        file_name="root/downloads/",
-    )
-    try:
-        response = upload_file(download_location)
-    except Exception as document:
-        await message.reply(message, text=document)
-    else:
-        await message.reply(
-            f"<b>• الــرابـط:-</b>\n\n <code>https://telegra.ph{response[0]}</code>",
-            quote=True,
-            reply_markup=InlineKeyboardMarkup(
-            [
-                [
-                    InlineKeyboardButton(text="🎯 ¦ افـتح الـرابـط", url=f"https://telegra.ph{response[0]}"),
-                    InlineKeyboardButton(text="♻️ ¦ مشـاركه الـرابـط", url=f"https://telegram.me/share/url?url=https://telegra.ph{response[0]}")
-                ],
-            ]
-        )
-    )
-    finally:
-        os.remove(download_location)
-
-
 
 
 
@@ -74,7 +25,7 @@ async def hshs(client: Client, message: Message):
     chat_name = message.chat.title#
     username = f"@{message.reply_to_message.from_user.username}"#
     async for photo in client.iter_profile_photos(message.reply_to_message.from_user.id, limit=1):
-                    await message.reply_photo(photo.file_id,       caption=f"""**[★⌞ ѕᴏụʀᴄᴇ ᴀʟᴍᴏʀᴛᴀɢᴇʟ ⌝˹⚡˼⁩](https://t.me/AlmortagelTech)\n\n🐉 ¦ ɴᴀᴍᴇ : {name}\n🤡 ¦ ᴜѕᴇ : {username}\n🔥 ¦ ɪᴅ : `{user_id}`\n🔅 ¦ ɪᴅ ᴄʜᴀᴛ : `{chat_idd}`\n💭 ¦ ᴄʜᴀᴛ : {chat_name}\n🐊 ¦ ɢʀᴏᴜᴘ : {chat_username} \n**""", 
+                    await message.reply_photo(photo.file_id,       caption=f"""🐉 ¦ ɴᴀᴍᴇ : {name}\n🤡 ¦ ᴜѕᴇ : {username}\n🔥 ¦ ɪᴅ : `{user_id}`\n🔅 ¦ ɪᴅ ᴄʜᴀᴛ : `{chat_idd}`\n💭 ¦ ᴄʜᴀᴛ : {chat_name}\n🐊 ¦ ɢʀᴏᴜᴘ : {chat_username} """, 
         reply_markup=InlineKeyboardMarkup(
             [
                 [
@@ -135,7 +86,7 @@ async def sticker_image(client: Client, message: Message):
 
 
 
-@app.on_message(command(["الجروب", "جروب"]) & filters.group & ~filters.edited)
+@app.on_message(command(["الكروب", "كروب"]) & filters.group & ~filters.edited)
 async def ginnj(client: Client, message: Message):
     chat_idd = message.chat.id
     chat_name = message.chat.title
