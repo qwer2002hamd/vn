@@ -80,6 +80,9 @@ REPLY_MESSAGE_BUTTONS = [
         ("ميديا")
     ],
     [
+        ("الـسورس"),
+    ],
+    [
         ("اخـفاء الكيبورد")
     ]
 ]
@@ -95,7 +98,7 @@ async def cpanel(_, message: Message):
 
 @app.on_message(filters.regex("اخـفاء الكيبورد"))
 async def down(client, message):
-          m = await message.reply(" تم اخفاء الكيبورد بنجاح .**\n\n- لاظهار لـوحه بعض مميزات الـبوت اضغط  /HMD", reply_markup= ReplyKeyboardRemove(selective=True))
+          m = await message.reply(" تم اخفاء الكيبورد بنجاح", reply_markup= ReplyKeyboardRemove(selective=True))
 
 
 @app.on_message(filters.regex("يـوتيوب"))
