@@ -23,7 +23,7 @@ REPLY_MESSAGE_BUTTONS = [
 ]
 
   
-@app.on_message(filters.private & filters.command("start"))
+@app.on_message(filters.private & filters.command("/start"))
 async def cpanel(_, message: Message):             
         text = REPLY_MESSAGE
         reply_markup = ReplyKeyboardMarkup(REPLY_MESSAGE_BUTTONS, resize_keyboard=True)
@@ -73,14 +73,16 @@ REPLY_MESSAGE_BUTTONSS = [
              ("اوامر القناة")
           ],
           [
-             ("اوامر المجموعة"),
-             ("اوامر المجموعة بالانكليزي")
+             ("اوامر المجموعه") 
+          ],
+          [  
+             ("اوامر المجموعة بالانجليزي")
           ],
           [
-             ("الاوامر المشتركة") 
+             ("اوامر مشتركة") 
           ],
           [
-             ("الاوامر المشتركة بالانكليزي")             
+             ("اوامر مشتركة بالانجليزي")             
           ],
           [
              ("رجوع")
@@ -88,7 +90,7 @@ REPLY_MESSAGE_BUTTONSS = [
 ]
 
   
-@app.on_message(filters.private & command("اوامر ارنوب"))
+@app.on_message(filters.private & command("اوامر التشغيل"))
 async def com(_, message: Message):             
         text = REPLY_MESSAGEE
         reply_markup = ReplyKeyboardMarkup(REPLY_MESSAGE_BUTTONSS, resize_keyboard=True)
@@ -137,7 +139,7 @@ async def mnsat(client: Client, message: Message):
         disable_web_page_preview=True
     )
 
-@app.on_message(filters.private & command("اوامر المجموعة"))
+@app.on_message(filters.private & command("اوامر المجموعه"))
 async def laksk(client: Client, message: Message):
     await message.reply_text(f"""
 ♚ مرحبا بك في اوامر التشغيل في المجموعات
@@ -171,7 +173,7 @@ async def laksk(client: Client, message: Message):
     )
 
 
-@app.on_message(filters.private & command("اوامر المجموعة بالانكليزي"))
+@app.on_message(filters.private & command("اوامر المجموعة بالانجليزي"))
 async def channvom(client: Client, message: Message):
     await message.reply_text(f"""
 ♚ مرحبا بك في اوامر التشغيل في المجموعات
@@ -208,7 +210,7 @@ async def channvom(client: Client, message: Message):
 
 
 
-@app.on_message(filters.private & command("الاوامر المشتركة"))
+@app.on_message(filters.private & command("اوامر مشتركة"))
 async def dowmmr(client: Client, message: Message):
     await message.reply_text(f"""
 
@@ -234,7 +236,7 @@ async def dowmmr(client: Client, message: Message):
         ),
         disable_web_page_preview=True
     )
-@app.on_message(filters.private & command("الاوامر المشتركة بالانكليزي"))
+@app.on_message(filters.private & command("اوامر مشتركة بالانجليزي"))
 async def dowhmr(client: Client, message: Message):
     await message.reply_text(f"""
 ♚ مرحبا بك في الاوامر المشتركه
