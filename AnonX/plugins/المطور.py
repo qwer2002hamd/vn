@@ -43,7 +43,10 @@ async def huhh(client: Client, message: Message):
     
 
 
-@app.on_message(command(["المالك", "المطور","الـمطور"]) & filters.group)
+@app.on_message(
+    command(["مطور","المطور","الـمطور"])
+    & ~filters.edited
+)
 async def gak_owne(client: Client, message: Message):
       if len(message.command) >= 2:
          return 
