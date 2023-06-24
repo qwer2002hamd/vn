@@ -23,28 +23,20 @@ def help_pannel(_, START: Union[bool, int] = None):
         [
             [
                 InlineKeyboardButton(
-                    text="⚡ اوامر التشغيل ⚡",
+                    text="‹ اوامر القنوات ›",
                     callback_data="help_callback hb1",
                 ),
+            ],
+            [
                 InlineKeyboardButton(
-                    text="⚡ اوامر المشرفين ⚡",
+                    text="‹ اوامر المجموعات ›",
                     callback_data="help_callback hb2",
                 ),
             ],
             [
                 InlineKeyboardButton(
-                    text="⚡ اوامر اضافية ⚡",
-                    callback_data="help_callback hb3",
-                ),
-                InlineKeyboardButton(
-                    text="⚡ اوامر اخرى ⚡",
+                    text="‹ اوامر مشتركه ›",
                     callback_data="help_callback hb4",
-                ),
-            ],
-            [
-                InlineKeyboardButton(
-                    text="⚡ اوامر المطورين ⚡",
-                    callback_data="help_callback hb5",
                 ),
             ],
             mark,
@@ -62,7 +54,7 @@ def help_back_markup(_):
                     callback_data=f"settings_back_helper",
                 ),
                 InlineKeyboardButton(
-                    text=_["CLOSE_BUTTON"], callback_data=f"إغلاق"
+                    text=_["CLOSE_BUTTON"], callback_data=f"close"
                 )
             ]
         ]
@@ -74,7 +66,7 @@ def private_help_panel(_):
     buttons = [
         [
             InlineKeyboardButton(
-                text="🗒 الاوامر",
+                text="‹ اوامر التشغيل ›",
                 callback_data="settings_back_helper",
             ),
         ],
