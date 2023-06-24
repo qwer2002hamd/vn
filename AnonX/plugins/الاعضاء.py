@@ -202,9 +202,9 @@ async def ihd(client: Client, message: Message):
     
 @app.on_message(command(["تت", "كت بالصوره"]))
 async def ihd(client: Client, message: Message):
-    rl = random.randint(2,50)
+    rl = random.randint(2,60)
     url = f"https://t.me/cat_tuet/{rl}"
-    await client.send_audio(message.chat.id,url,caption="كت بالصوره 🥺❤",parse_mode="html",
+    await client.send_audio(message.chat.id,url,caption="🐉 ¦ تـم اختيـار تويت بالصوره",parse_mode="html",
     reply_markup=InlineKeyboardMarkup(
             [
                 [
