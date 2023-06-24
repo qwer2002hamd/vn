@@ -20,7 +20,7 @@ from pyrogram.errors import MessageNotModified
 )
 async def cr_source(client: Client, message: Message):
     await message.reply_photo(
-        photo=f"https://telegra.ph/file/6468b22dc90f83241f86f.jpg",
+        photo=f"https://graph.org/file/c973727bddf803e028539.jpg",
         caption=f"""مرحبا بك عزيزي {message.from_user.mention}\nهذا قسم اوامر تشغيل البوت  \nلمعرفة الاوامر اضغط على الأزرار بالأسفل👇""",
         reply_markup=InlineKeyboardMarkup(
             [
@@ -220,7 +220,7 @@ async def cr_usage(_, callback_query: CallbackQuery):
 @app.on_callback_query(filters.regex("back"))
 async def cr_back(_, callback_query: CallbackQuery):
     await message.reply_photo(
-        photo=f"https://telegra.ph/file/6468b22dc90f83241f86f.jpg",
+        photo=f"https://graph.org/file/c973727bddf803e028539.jpg",
         caption=f"""مرحبا بك عزيزي {message.from_user.mention}\n في قسم اوامر التشغيل \nلمعرفة الاوامر اضغط على الأزرار بالأسفل👇""",
         reply_markup=InlineKeyboardMarkup(
             [
