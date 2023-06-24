@@ -23,7 +23,7 @@ REPLY_MESSAGE_BUTTONS = [
 ]
 
   
-@app.on_message(filters.regex("/start"))
+@app.on_message(filters.private & command("/start"))
 async def cpanel(_, message: Message):             
         text = REPLY_MESSAGE
         reply_markup = ReplyKeyboardMarkup(REPLY_MESSAGE_BUTTONS, resize_keyboard=True)
@@ -55,7 +55,7 @@ async def addbot(client: Client, message: Message):
                         "‹ قـناة الـسورس ›", url=f"https://t.me/ah07v"),
                 ],[
                     InlineKeyboardButton(
-                        "اضغط لاضافه البوت لمجموعتك", url=f"https://t.me/HAMD_MUSIC_BOT?startgroup=true"),
+                        "اضغط لاضافه البوت لمجموعتك", url=f"https://t.me/USER_BOT?startgroup=true"),
                 ],
             ]
         ),
@@ -79,7 +79,7 @@ REPLY_MESSAGE_BUTTONSS = [
              ("اوامر المجموعة بالانجليزي")
           ],
           [
-             ("اوامر مشتركة") 
+             ("اوامر مشتركه") 
           ],
           [
              ("اوامر مشتركة بالانجليزي")             
@@ -131,7 +131,7 @@ async def mnsat(client: Client, message: Message):
                 [
                       
                     InlineKeyboardButton(
-                        "اضغط لاضافه البوت لمجموعتك", url=f"https://t.me/HAMD_MUSIC_BOT?startgroup=true"),
+                        "اضغط لاضافه البوت لمجموعتك", url=f"https://t.me/USER_BOT?startgroup=true"),
 
                 ],
             ]
@@ -165,7 +165,7 @@ async def laksk(client: Client, message: Message):
                         "‹ قـناة الـسورس ›", url=f"https://t.me/ah07v"),
                 ],[
                     InlineKeyboardButton(
-                        "اضغط لاضافه البوت لمجموعتك", url=f"https://t.me/HAMD_MUSIC_BOT?startgroup=true"),
+                        "اضغط لاضافه البوت لمجموعتك", url=f"https://t.me/USER_BOT?startgroup=true"),
                 ],
             ]
         ),
@@ -201,7 +201,7 @@ async def channvom(client: Client, message: Message):
                         "‹ قـناة الـسورس ›", url=f"https://t.me/ah07v"),
                 ],[
                     InlineKeyboardButton(
-                        "اضغط لاضافه البوت لمجموعتك", url=f"https://t.me/HAMD_MUSIC_BOT?startgroup=true"),
+                        "اضغط لاضافه البوت لمجموعتك", url=f"https://t.me/USER_BOT?startgroup=true"),
                 ],
             ]
         ),
@@ -230,7 +230,7 @@ async def dowmmr(client: Client, message: Message):
                         "‹ قـناة الـيورس ›", url=f"https://t.me/ah07v"),
                 ],[
                     InlineKeyboardButton(
-                        "اضغط لاضافه البوت لمجموعتك", url=f"https://t.me/HAMD_MUSIC_BOT?startgroup=true"),
+                        "اضغط لاضافه البوت لمجموعتك", url=f"https://t.me/USER_BOT?startgroup=true"),
                 ],
             ]
         ),
@@ -256,7 +256,7 @@ async def dowhmr(client: Client, message: Message):
                         "‹ قـناة الـسورس ›", url=f"https://t.me/ah07v"),
                 ],[
                     InlineKeyboardButton(
-                        "اضغط لاضافه البوت لمجموعتك", url=f"https://t.me/HAMD_MUSIC_BOT?startgroup=true"),
+                        "اضغط لاضافه البوت لمجموعتك", url=f"https://t.me/USER_BOT?startgroup=true"),
                 ],
             ]
         ),
