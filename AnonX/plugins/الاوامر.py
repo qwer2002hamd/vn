@@ -123,7 +123,7 @@ async def cr_usage(_, callback_query: CallbackQuery):
 
 •اوامر التشغيل الانجليزيه
 
-/mplay - لتشغيل اغنيه
+/play - لتشغيل اغنيه
 /vplay - لتشغيل فيديو
 /playlist - لمعرفة قائمة التشغيل 
 /skip - لتخطي التشغيل الحالي
