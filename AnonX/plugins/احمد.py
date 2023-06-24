@@ -5,7 +5,7 @@ from pyrogram import filters
 from strings import get_command
 from strings.filters import command
 from config import BANNED_USERS
-from config.config import OWNER_ID
+from config import OWNER_ID
 from pyrogram.types import Message, InlineKeyboardMarkup, InlineKeyboardButton
 from pyrogram.types import (InlineKeyboardButton,CallbackQuery,
                             InlineKeyboardMarkup, Message)
