@@ -33,6 +33,7 @@ PLAY_COMMAND = get_command("PLAY_COMMAND")
 
 @app.on_message(
     command(PLAY_COMMAND)
+    & ~filters.edited
     & ~BANNED_USERS
 )
 @PlayWrapper
@@ -497,6 +498,7 @@ async def play_commnd(
 
 @app.on_message(
     command(["/play", "/vplay", "play", "vplay", "شغل", "تشغيل", "فديو", "فيديو"])
+    & ~filters.edited
     & filters.channel
     & ~BANNED_USERS
 )
