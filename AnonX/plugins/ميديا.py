@@ -1,8 +1,16 @@
-from pyrogram import Client, filters
-from pyrogram.types import Message
+import asyncio
 import os
+import time
+import requests
+import aiohttp
+from pyrogram import filters
+from pyrogram import Client
+from pyrogram.types import Message, InlineKeyboardMarkup, InlineKeyboardButton, ReplyKeyboardMarkup
 from strings.filters import command
+from AnonX import (Apple, Resso, SoundCloud, Spotify, Telegram, YouTube, app)
 from AnonX import app
+from asyncio import gather
+from pyrogram.errors import FloodWait
 
 @app.on_message(command(["تليجراف ميديا","ميديا"]))
 async def get_link_group(client, message):
