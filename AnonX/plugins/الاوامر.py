@@ -48,9 +48,9 @@ async def cr_source(client: Client, message: Message):
     
 @app.on_callback_query(filters.regex("gr"))
 async def cr_usage(_, callback_query: CallbackQuery):
-    await callback_query.answer()
-    await callback_query.message.edit_text(
-        text="""
+    await message.reply_photo(
+        photo=f"https://graph.org/file/c973727bddf803e028539.jpg",
+        caption=f"""
 ♚ مرحبا بك في اومر التشغيل بالقنوات
 
 ››  تشغيل ↫ اسم الاغنيه .
@@ -77,9 +77,9 @@ async def cr_usage(_, callback_query: CallbackQuery):
 
 @app.on_callback_query(filters.regex("ch"))
 async def cr_usage(_, callback_query: CallbackQuery):
-    await callback_query.answer()
-    await callback_query.message.edit_text(
-        text="""
+    await message.reply_photo(
+        photo=f"https://graph.org/file/c973727bddf803e028539.jpg",
+        caption=f"""
 ♚ مرحبا بك في اوامر التشغيل في المجموعات
 
 •اوامر التشغيل العربيه
@@ -116,9 +116,9 @@ async def cr_usage(_, callback_query: CallbackQuery):
 
 @app.on_callback_query(filters.regex("ad"))
 async def cr_usage(_, callback_query: CallbackQuery):
-    await callback_query.answer()
-    await callback_query.message.edit_text(
-        text="""
+    await message.reply_photo(
+        photo=f"https://graph.org/file/c973727bddf803e028539.jpg",
+        caption=f"""
 ♚ مرحبا بك في اوامر التشغيل في المجموعات
 
 •اوامر التشغيل الانجليزيه
@@ -157,9 +157,9 @@ async def cr_usage(_, callback_query: CallbackQuery):
 
 @app.on_callback_query(filters.regex("adm"))
 async def cr_usage(_, callback_query: CallbackQuery):
-    await callback_query.answer()
-    await callback_query.message.edit_text(
-        text="""
+    await message.reply_photo(
+        photo=f"https://graph.org/file/c973727bddf803e028539.jpg",
+        caption=f"""
 ♚ مرحبا بك في الاوامر المشتركه
 
 •الاوامر المشتركه العربيه
@@ -187,9 +187,9 @@ async def cr_usage(_, callback_query: CallbackQuery):
 
 @app.on_callback_query(filters.regex("dm"))
 async def cr_usage(_, callback_query: CallbackQuery):
-    await callback_query.answer()
-    await callback_query.message.edit_text(
-        text="""
+    await message.reply_photo(
+        photo=f"https://graph.org/file/c973727bddf803e028539.jpg",
+        caption=f"""
 ♚ مرحبا بك في الاوامر المشتركه
 
 •الاوامر المشتركه الانجليزيه
