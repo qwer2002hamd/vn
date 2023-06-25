@@ -20,9 +20,8 @@ from pyrogram.errors import FloodWait
     & ~filters.edited
 )
 async def khalid(client: Client, message: Message):
-    await message.reply_photo(
-        photo=f"https://telegra.ph/file/cbb97494ade83d71605ed.jpg",
-        caption=f""" 🐉 | يـوزرڪ : [ @{user} ] \n✓ """,
+    await message.reply_text(
+        f""" 🐉 | يـوزرڪ : [ @{user} ] \n✓ """,
         reply_markup=InlineKeyboardMarkup(
             [
                 [
@@ -38,7 +37,7 @@ async def khalid(client: Client, message: Message):
 
 
 @app.on_message(
-    command(["مطور","المطور","الـمطور"])
+    command(["مالك","المالك"])
     & ~filters.edited
 )
 async def gak_owne(client: Client, message: Message):
