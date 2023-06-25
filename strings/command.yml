@@ -5,7 +5,7 @@
 
 # Bot Commands
 PING_COMMAND : ["/ping","ping"]
-START_COMMAND : [""]
+START_COMMAND : ["/start","start"]
 HELP_COMMAND : ["/help","help"]
 SETTINGS_COMMAND : ["/settings", "/setting","الاعدادات"]
 RELOAD_COMMAND : ["/admincache", "/reload","ريلود"]
