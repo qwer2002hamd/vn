@@ -21,18 +21,7 @@ from pyrogram.errors import FloodWait
 )
 async def khalid(client: Client, message: Message):
     await message.reply_text(
-        f""" 🐉 | يـوزرڪ : [ @{user} ] \n✓ """,
-        reply_markup=InlineKeyboardMarkup(
-            [
-                [
-                InlineKeyboardButton("‹ اضف البوت مجموعتك ›", url=f"https://t.me/HAMD_MUSIC_BOT?startgroup=true"),
-                ],[
-                InlineKeyboardButton(
-                        "‹ قـناة الـسورس ›", url=f"https://t.me/ah07v"), 
-                ]
-            ]
-        ),
-    )
+        f""" 🐉 | يـوزرڪ : [ @{user} ] \n✓ """) 
 
 
 
