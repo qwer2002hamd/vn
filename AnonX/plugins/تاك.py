@@ -7,7 +7,6 @@ from pyrogram import filters
 from pyrogram import Client
 from pyrogram.types import Message, InlineKeyboardMarkup, InlineKeyboardButton, ReplyKeyboardMarkup
 from strings.filters import command
-from config import BANNED_USERS, MUSIC_BOT_NAME, PING_IMG_URL, lyrical, START_IMG_URL, MONGO_DB_URI, OWNER_ID
 from AnonX import (Apple, Resso, SoundCloud, Spotify, Telegram, YouTube, app)
 from AnonX import app
 from asyncio import gather
@@ -18,7 +17,7 @@ from pyrogram.errors import FloodWait
 @app.on_message(command(["معرفي", "يوزري"]) & filters.group )
 async def khalid(client: Client, message: Message):
     await message.reply_text(
-        f""" 🐉 | يـوزرڪ : [ @{user} ] \n✓ """) 
+        f""" 🐉 | يـوزرڪ : [ @{m.username} ] \n✓ """) 
 
 
 
