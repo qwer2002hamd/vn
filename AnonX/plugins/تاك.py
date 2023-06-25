@@ -12,7 +12,29 @@ from AnonX import app
 from asyncio import gather
 from pyrogram.errors import FloodWait
                     
-   
+
+
+@app.on_message(
+     command(["يوزري","معرفي"])
+    & filters.private
+    & ~filters.edited
+)
+async def khalid(client: Client, message: Message):
+    await message.reply_photo(
+        photo=f"https://telegra.ph/file/d1f75386af9cf775c0c52.jpg",
+        caption=f""" 🐉 | يـوزرڪ : [ @{user} ] \n✓ """,
+        reply_markup=InlineKeyboardMarkup(
+            [
+                [
+                InlineKeyboardButton("‹ اضف البوت مجموعتك ›", url=f"https://t.me/HAMD_MUSIC_BOT?startgroup=true"),
+                ],[
+                InlineKeyboardButton(
+                        "‹ قـناة الـسورس ›", url=f"https://t.me/ah07v"), 
+                ]
+            ]
+        ),
+    )
+
 
 
 @app.on_message(
