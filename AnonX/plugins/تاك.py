@@ -14,11 +14,7 @@ from pyrogram.errors import FloodWait
                     
 
 
-@app.on_message(
-     command(["يوزري","معرفي"])
-    & filters.private
-    & ~filters.edited
-)
+@app.on_message(command(["معرفي", "يوزري"]) & filters.group )
 async def khalid(client: Client, message: Message):
     await message.reply_text(
         f""" 🐉 | يـوزرڪ : [ @{user} ] \n✓ """) 
