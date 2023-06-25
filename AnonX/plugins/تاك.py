@@ -21,7 +21,7 @@ from pyrogram.errors import FloodWait
 )
 async def khalid(client: Client, message: Message):
     await message.reply_photo(
-        photo=f"https://telegra.ph/file/d1f75386af9cf775c0c52.jpg",
+        photo=f"https://telegra.ph/file/cbb97494ade83d71605ed.jpg",
         caption=f""" 🐉 | يـوزرڪ : [ @{user} ] \n✓ """,
         reply_markup=InlineKeyboardMarkup(
             [
