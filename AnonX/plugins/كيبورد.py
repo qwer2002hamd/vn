@@ -20,7 +20,9 @@ REPLY_MESSAGE = "**اليك لـوحه بعض مميزات الـبوت**"
 REPLY_MESSAGE_BUTTONS = [
     [
         ("تفعيل التواصل"),
-        ("تعطيل التواصل"), 
+        ("تعطيل التواصل")
+    ],
+    [
         ("حاله التواصل") 
     ],
     [
@@ -29,7 +31,9 @@ REPLY_MESSAGE_BUTTONS = [
     ],
     [
         ("تفعيل الاشتراك"), 
-        ("تعطيل الاشتراك"), 
+        ("تعطيل الاشتراك")
+    ],
+    [ 
         ("قناه الاشتراك") 
     ],
     [
@@ -38,7 +42,9 @@ REPLY_MESSAGE_BUTTONS = [
     ],
     [
         ("تفعيل اليوتيوب"), 
-        ("تعطيل اليوتيوب"), 
+        ("تعطيل اليوتيوب")
+    ],
+    [ 
         ("حاله اليوتيوب") 
     ],
     [
@@ -51,7 +57,9 @@ REPLY_MESSAGE_BUTTONS = [
     ],
     [
         ("اذاعه للمطورين"),
-        ("اذاعه للاساسيين"), 
+        ("اذاعه للاساسيين") 
+    ],
+    [  
         ("اذاعه للقنوات") 
     ],
     [
@@ -72,7 +80,9 @@ REPLY_MESSAGE_BUTTONS = [
     ],
     [
         ("رفع مطور"),
-        ("تنزيل مطور"), 
+        ("تنزيل مطور")
+    ],
+    [  
         ("عرض المطورين") 
     ],
     [
@@ -84,7 +94,7 @@ REPLY_MESSAGE_BUTTONS = [
     ]
 ]
 
-@app.on_message(filters.regex("/AHMAD"))
+@app.on_message(filters.private & command("/AHMED"))
 async def cpanel(_, message: Message):             
         text = REPLY_MESSAGE
         reply_markup = ReplyKeyboardMarkup(REPLY_MESSAGE_BUTTONS, resize_keyboard=True, selective=True)
