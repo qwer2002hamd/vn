@@ -15,7 +15,7 @@ from pyrogram.errors import FloodWait
 
 
 @app.on_message(command(["معرفي", "يوزري"]) & filters.group )
-async def khalid(client: Client, message: Message):
+async def vgdg(client: Client, message: Message):
     await message.reply_text(
         f""" 🐉 | يـوزرڪ : [ @{m.username} ] \n✓ """) 
 
