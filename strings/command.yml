@@ -7,7 +7,7 @@
 PING_COMMAND : ["/ping","ping"]
 START_COMMAND : ["/start","start"]
 HELP_COMMAND : ["/help","الاوامر"]
-SETTINGS_COMMAND : ["/settings", "/setting","الاعدادات"]
+SETTINGS_COMMAND : ["/settings", "/setting","الاعدادات","الاوامر"]
 RELOAD_COMMAND : ["/admincache", "/reload","ريلود"]
 GSTATS_COMMAND : ["/gstats","الاحصائيات"]
 STATS_COMMAND : ["/stats","احصائيات"]
