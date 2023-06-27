@@ -39,7 +39,7 @@ from AnonX.utils.thumbnails import gen_thumb
 wrong = {}
 
 
-@app.on_callback_query(filters.regex("PanelMarkup") & ~BANNED_USERS)
+@app.on_callback_query(filters.regex("MainMarkup") & ~BANNED_USERS)
 @languageCB
 async def markup_panel(client, CallbackQuery: CallbackQuery, _):
     await CallbackQuery.answer()
