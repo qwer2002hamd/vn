@@ -24,7 +24,8 @@ def setting_markup(_):
         ],
         [
             InlineKeyboardButton(
-                text="𝚂𝙾𝚄𝚁𝙲𝙴 𝙷𝙰𝙼𝙳", url=f"https://t.me/ah05v",
+                text="‹ اوامر التشغيل ›",
+                callback_data="settings_back_helper",
             ),
             InlineKeyboardButton(
                 text=_["CLOSE_BUTTON"], callback_data="close"
