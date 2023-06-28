@@ -4,9 +4,6 @@ import time
 import shlex
 import requests
 from datetime import datetime
-from AnonX.utils.filters import command
-
-from AnonX.utils.filters import command, other_filters
 from pyrogram.errors import UserNotParticipant
 from AnonX.utils.extract_user import extract_user, last_online
 from telegraph import upload_file
