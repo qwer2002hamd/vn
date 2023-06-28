@@ -1,9 +1,15 @@
-from pyrogram import Client, filters
-from pyrogram.types import Message
-from telegraph import upload_file
+import asyncio
 import os
+import time
+import requests
+import aiohttp
+from pyrogram import filters
+from pyrogram import Client
+from pyrogram.types import Message, InlineKeyboardMarkup, InlineKeyboardButton, ReplyKeyboardMarkup
 from strings.filters import command
+from AnonX import (Apple, Resso, SoundCloud, Spotify, Telegram, YouTube, app)
 from AnonX import app
+from asyncio import gather
 
 @Client.on_message(command(["جراف", "تلجراف"]))
 async def telegraph(client, message):
