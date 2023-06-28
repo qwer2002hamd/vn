@@ -10,7 +10,6 @@ from strings.filters import command
 from AnonX import (Apple, Resso, SoundCloud, Spotify, Telegram, YouTube, app)
 from AnonX import app
 from asyncio import gather
-from pyrogram.errors import FloodWait
 
 @app.on_message(command(["تليجراف ميديا","ميديا"]))
 async def get_link_group(client, message):
