@@ -1,16 +1,9 @@
-import os
-import asyncio
-import time
-import shlex
-import requests
-from datetime import datetime
-from pyrogram.errors import UserNotParticipant
-from telegraph import upload_file
-from typing import Callable, Coroutine, Dict, List, Tuple, Union
-from json import JSONDecodeError
 from pyrogram import Client, filters
-from AnonX.config import BOT_USERNAME
-
+from pyrogram.types import Message
+from telegraph import upload_file
+import os
+from strings.filters import command
+from AnonX import app
 
 @Client.on_message(command(["جراف", "تلجراف"]))
 async def telegraph(client, message):
