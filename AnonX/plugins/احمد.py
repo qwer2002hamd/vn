@@ -97,7 +97,7 @@ async def down(client, message):
 @app.on_message(filters.regex("يـوتيوب"))
 def reply_to_HEY(Client, message):
     message.reply_photo(
-        photo=f"https://telegra.ph/file/cbb97494ade83d71605ed.jpg",
+        photo=f"https://telegra.ph/file/660cacb5b70552494326d.jpg",
         caption=f"""**يتم استخدام هذا الامر لعرض تحميل من اليوتيوب**\n**استخدم الامر بهذا الشكل** `تنزيل` ** او ** `يوتيوب` ** كمثل تنزيل سوره الرحمن اضغط علي الامر لنسخ والاستخدام**""",
         reply_markup=InlineKeyboardMarkup(
             [
