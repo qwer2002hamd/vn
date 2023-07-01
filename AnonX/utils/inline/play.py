@@ -275,24 +275,3 @@ close_keyboard = InlineKeyboardMarkup(
             ]
         )
 
-
-## Queue Markup
-
-def queue_markup(_, videoid, chat_id):
-    buttons = [
-        [
-            InlineKeyboardButton(
-                text="كمل",
-                callback_data=f"ADMIN Resume|{chat_id}",
-            ),
-            InlineKeyboardButton(text="وقف", callback_data=f"ADMIN Pause|{chat_id}"),
-            InlineKeyboardButton(text="تخطي", callback_data=f"ADMIN Skip|{chat_id}"),
-            InlineKeyboardButton(text="ايقاف", callback_data=f"ADMIN Stop|{chat_id}"),
-        ],
-        [
-            InlineKeyboardButton(
-                text="🗑حـذف", callback_data=f"ADMIN CloseA|{chat_id}"
-            )
-        ],
-    ]
-    return buttons
