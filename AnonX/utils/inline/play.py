@@ -92,7 +92,7 @@ def telegram_markup_timer(_, chat_id, played, dur):
 ## Inline without Timer Bar
 
 
-def stream_markup(_, videoid, chat_id):
+def stream_markup_1(_, videoid, chat_id):
     buttons = [
         [
             InlineKeyboardButton(
