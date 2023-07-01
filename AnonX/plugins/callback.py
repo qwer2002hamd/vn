@@ -28,6 +28,7 @@ from AnonX.utils.decorators.language import languageCB
 from AnonX.utils.formatters import seconds_to_min
 from AnonX.utils.inline import (
     stream_markup,
+    stream_markup_1,
     stream_markup_timer,
     telegram_markup,
     telegram_markup_timer,
@@ -49,6 +50,8 @@ async def del_back_playlist(client, CallbackQuery, _):
         buttons = telegram_markup(_, chat_id)
     else:
         buttons = stream_markup(_, videoid, chat_id)
+    else:
+        buttons = stream_markup_1(_, videoid, chat_id)
     chat_id = CallbackQuery.message.chat.id
     try:
         await CallbackQuery.edit_message_reply_markup(
