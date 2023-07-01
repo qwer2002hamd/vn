@@ -8,14 +8,7 @@ import random
 from AnonX.utils.database import get_theme
 
 themes = [
-    "alexa1",
-    "alexa2",
-    "alexa3",
-    "alexa4",
-    "alexa5",
-    "alexa6",
-    "alexa7",
-    "alexa8",
+    "anonx",
 ]
 
 
