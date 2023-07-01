@@ -51,7 +51,7 @@ async def del_back_playlist(client, CallbackQuery, _):
     else:
         buttons = stream_markup(_, videoid, chat_id)
     else:
-        buttons = stream_markup_1(_, videoid, chat_id)
+        buttons = stream_markup_1(_, videoid, chat_id) 
     chat_id = CallbackQuery.message.chat.id
     try:
         await CallbackQuery.edit_message_reply_markup(
