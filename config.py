@@ -131,7 +131,7 @@ if UPSTREAM_REPO:
             print(
                 "[ERROR] - Your YOUTUBE_IMG_URL url is wrong. Please ensure that it starts with https://"
             )
-            sys.exit()      
+            sys.exit()
 
 if PING_IMG_URL:
     if PING_IMG_URL != "assets/Ping.jpeg":
