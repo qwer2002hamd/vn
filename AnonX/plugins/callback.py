@@ -21,7 +21,6 @@ from config import (
 from AnonX import YouTube, app
 from AnonX.core.call import Anon
 from AnonX.misc import SUDOERS, db
-from AnonX.utils.database import (
     is_active_chat,
     is_music_playing,
     is_muted,
