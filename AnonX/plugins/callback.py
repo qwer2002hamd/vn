@@ -12,10 +12,10 @@ from config import (
     TELEGRAM_VIDEO_URL,
     adminlist,
 )
-from AlexaMusic import YouTube, app
-from AlexaMusic.core.call import Alexa
-from AlexaMusic.misc import SUDOERS, db
-from AlexaMusic.utils.database import (
+from AnonX import YouTube, app
+from AnonX.core.call import Anon
+from AnonX.misc import SUDOERS, db
+from AnonX.utils.database import (
     is_active_chat,
     is_music_playing,
     is_muted,
@@ -26,12 +26,12 @@ from AlexaMusic.utils.database import (
     mute_on,
     set_loop,
 )
-from AlexaMusic.utils.decorators.language import languageCB
-from AlexaMusic.utils.formatters import seconds_to_min
-from AlexaMusic.utils.inline.play import panel_markup_1, stream_markup, telegram_markup
-from AlexaMusic.utils.stream.autoclear import auto_clean
-from AlexaMusic.utils.thumbnails import gen_thumb
-from AlexaMusic.utils.theme import check_theme
+from AnonX.utils.decorators.language import languageCB
+from AnonX.utils.formatters import seconds_to_min
+from AnonX.utils.inline.play import panel_markup_1, stream_markup, telegram_markup
+from AnonX.utils.stream.autoclear import auto_clean
+from AnonX.utils.thumbnails import gen_thumb
+from AnonX.utils.theme import check_theme
 
 wrong = {}
 
