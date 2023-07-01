@@ -119,46 +119,10 @@ def telegram_markup_timer(_, chat_id, played, dur):
     ]
     return buttons
 
-
-def stream_markup(_, videoid, chat_id):
-    buttons = [
-        [
-            InlineKeyboardButton(
-                text="كمل",
-                callback_data=f"ADMIN Resume|{chat_id}",
-            ),
-            InlineKeyboardButton(text="وقف", callback_data=f"ADMIN Pause|{chat_id}"),
-            InlineKeyboardButton(text="تخطي", callback_data=f"ADMIN Skip|{chat_id}"),
-            InlineKeyboardButton(text="ايقاف", callback_data=f"ADMIN Stop|{chat_id}"),
-        ],
-        [
-            InlineKeyboardButton(
-                text="🗑حـذف", callback_data=f"ADMIN CloseA|{chat_id}"
-            )
-        ],
-    ]
-    return buttons
-
-
-def telegram_markup(_, chat_id):
-    buttons = [
-        [
-            InlineKeyboardButton(
-                text="كمل",
-                callback_data=f"ADMIN Resume|{chat_id}",
-            ),
-            InlineKeyboardButton(text="وقف", callback_data=f"ADMIN Pause|{chat_id}"),
-            InlineKeyboardButton(text="تخطي", callback_data=f"ADMIN Skip|{chat_id}"),
-            InlineKeyboardButton(text="ايقاف", callback_data=f"ADMIN Stop|{chat_id}"),
-        ],
-        [
-            InlineKeyboardButton(
-                text="🗑حـذف", callback_data=f"ADMIN CloseA|{chat_id}"
-            )
-        ],
-    ]
-    return buttons
-
+## By Anon
+close_keyboard = InlineKeyboardMarkup(
+    [[InlineKeyboardButton(text="🗑 حـذف", callback_data="close")]]
+)
 
 ## Search Query Inline
 
@@ -179,10 +143,36 @@ def track_markup(_, videoid, user_id, channel, fplay):
             InlineKeyboardButton(
                 text=_["CLOSE_BUTTON"],
                 callback_data=f"forceclose {videoid}|{user_id}",
-            )
+            ),
         ],
     ]
     return buttons
+
+def playlist_markup(_, videoid, user_id, ptype, channel, fplay):
+    buttons = [
+        [
+            InlineKeyboardButton(
+                text=_["P_B_1"],
+                callback_data=f"YukkiPlaylists {videoid}|{user_id}|{ptype}|a|{channel}|{fplay}",
+            ),
+            InlineKeyboardButton(
+                text=_["P_B_2"],
+                callback_data=f"YukkiPlaylists {videoid}|{user_id}|{ptype}|v|{channel}|{fplay}",
+            ),
+        ],
+        [
+            InlineKeyboardButton(
+                text=_["S_B_3"],
+                url=f"{SUPPORT_GROUP}",
+            ),
+            InlineKeyboardButton(
+                text=_["CLOSE_BUTTON"],
+                callback_data=f"forceclose {videoid}|{user_id}",
+            ),
+        ],
+    ]
+    return buttons
+
 
 ## Live Stream Markup
 
@@ -200,29 +190,6 @@ def livestream_markup(_, videoid, user_id, mode, channel, fplay):
                 text=_["CLOSEMENU_BUTTON"],
                 callback_data=f"forceclose {videoid}|{user_id}",
             ),
-        ]
-    ]
-    return buttons
-
-## wtf
-
-def playlist_markup(_, videoid, user_id, ptype, channel, fplay):
-    buttons = [
-        [
-            InlineKeyboardButton(
-                text=_["P_B_1"],
-                callback_data=f"AnonPlaylists {videoid}|{user_id}|{ptype}|a|{channel}|{fplay}",
-            ),
-            InlineKeyboardButton(
-                text=_["P_B_2"],
-                callback_data=f"AnonPlaylists {videoid}|{user_id}|{ptype}|v|{channel}|{fplay}",
-            ),
-        ],
-        [
-            InlineKeyboardButton(
-                text=_["CLOSE_BUTTON"],
-                callback_data=f"forceclose {videoid}|{user_id}",
-            ),
         ],
     ]
     return buttons
@@ -231,9 +198,7 @@ def playlist_markup(_, videoid, user_id, ptype, channel, fplay):
 ## Slider Query Markup
 
 
-def slider_markup(
-    _, videoid, user_id, query, query_type, channel, fplay
-):
+def slider_markup(_, videoid, user_id, query, query_type, channel, fplay):
     query = f"{query[:20]}"
     buttons = [
         [
@@ -263,15 +228,78 @@ def slider_markup(
     ]
     return buttons
 
-## Extra Shit
 
-close_keyboard = InlineKeyboardMarkup( 
-            [
-                [
-                    InlineKeyboardButton(
-                        text="حذف 🗑", callback_data="close"
-                    )
-                ]    
-            ]
-        )
+## Cpanel Markup
 
+
+def panel_markup_1(_, videoid, chat_id):
+    buttons = [
+        [
+            InlineKeyboardButton(
+                text="كمل",
+                callback_data=f"ADMIN Resume|{chat_id}",
+            ),
+            InlineKeyboardButton(text="وقف", callback_data=f"ADMIN Pause|{chat_id}"),
+            InlineKeyboardButton(text="تخطي", callback_data=f"ADMIN Skip|{chat_id}"),
+            InlineKeyboardButton(text="ايقاف", callback_data=f"ADMIN Stop|{chat_id}"),
+        ],
+        [
+            InlineKeyboardButton(
+                text="⇆ عشوائي ⇆",
+                callback_data=f"ADMIN Shuffle|{chat_id}",
+            ),
+            InlineKeyboardButton(
+                text="↻ تكرار ↻", callback_data=f"ADMIN Loop|{chat_id}"
+            ),
+        ],
+        [
+            InlineKeyboardButton(
+                text="⏮ 10 ثواني",
+                callback_data=f"ADMIN 1|{chat_id}",
+            ),
+            InlineKeyboardButton(
+                text="⏭ 10 ثواني",
+                callback_data=f"ADMIN 2|{chat_id}",
+            ),
+        ],
+        [
+            InlineKeyboardButton(
+                text="⏮ 30 ثانيه",
+                callback_data=f"ADMIN 3|{chat_id}",
+            ),
+            InlineKeyboardButton(
+                text="⏭ 30 ثانيه",
+                callback_data=f"ADMIN 4|{chat_id}",
+            ),
+        ],
+        [
+            InlineKeyboardButton(
+                text="🔙 رجوع",
+                callback_data=f"MainMarkup {videoid}|{chat_id}",
+            ),
+        ],
+    ]
+    return buttons
+
+
+## Queue Markup Anon
+
+
+def queue_markup(_, videoid, chat_id):
+    buttons = [
+        [
+            InlineKeyboardButton(
+                text="كمل",
+                callback_data=f"ADMIN Resume|{chat_id}",
+            ),
+            InlineKeyboardButton(text="وقف", callback_data=f"ADMIN Pause|{chat_id}"),
+            InlineKeyboardButton(text="تخطي", callback_data=f"ADMIN Skip|{chat_id}"),
+            InlineKeyboardButton(text="ايقاف", callback_data=f"ADMIN Stop|{chat_id}"),
+        ],
+        [
+            InlineKeyboardButton(
+                text="🗑حـذف", callback_data=f"ADMIN CloseA|{chat_id}"
+            )
+        ],
+    ]
+    return buttons
