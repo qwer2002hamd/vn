@@ -28,7 +28,6 @@ from AnonX.utils.decorators.language import languageCB
 from AnonX.utils.formatters import seconds_to_min
 from AnonX.utils.inline import (
     stream_markup,
-    stream_markup_1,
     stream_markup_timer,
     telegram_markup,
     telegram_markup_timer,
@@ -49,7 +48,7 @@ async def del_back_playlist(client, CallbackQuery, _):
     if videoid == str(None):
         buttons = telegram_markup(_, chat_id)
     else:
-        buttons = stream_markup_1(_, videoid, chat_id)
+        buttons = stream_markup(_, videoid, chat_id)
     chat_id = CallbackQuery.message.chat.id
     try:
         await CallbackQuery.edit_message_reply_markup(
@@ -60,26 +59,6 @@ async def del_back_playlist(client, CallbackQuery, _):
     if chat_id not in checker:
         checker[chat_id] = {}
     checker[chat_id][CallbackQuery.message.message_id] = True
-
-
-@app.on_callback_query(filters.regex("MainMarkup") & ~BANNED_USERS)
-@languageCB
-async def markup_panel(client, CallbackQuery: CallbackQuery, _):
-    await CallbackQuery.answer()
-    callback_data = CallbackQuery.data.strip()
-    callback_request = callback_data.split(None, 1)[1]
-    videoid, chat_id = callback_request.split("|")
-    chat_id = CallbackQuery.message.chat.id
-    buttons = stream_markup(_, videoid, chat_id)
-    try:
-        await CallbackQuery.edit_message_reply_markup(
-            reply_markup=InlineKeyboardMarkup(buttons)
-        )
-    except:
-        return
-    if chat_id not in wrong:
-        wrong[chat_id] = {}
-    wrong[chat_id][CallbackQuery.message.message_id] = True
 
 
 @app.on_callback_query(filters.regex("unban_assistant"))
