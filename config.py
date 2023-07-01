@@ -97,10 +97,6 @@ STREAM_IMG_URL = "https://te.legra.ph/file/5297a508644d7231069e4.jpg"
 
 SOUNCLOUD_IMG_URL = "https://te.legra.ph/file/a9d48a1666b8b04f2bca2.jpg"
 
-YOUTUBE_IMG_URL = getenv(
-    "YOUTUBE_IMG_URL",
-    "assets/Youtube.jpeg", 
-
 SPOTIFY_ARTIST_IMG_URL = "https://te.legra.ph/file/42d626435044551dc09bd.jpg"
 
 SPOTIFY_ALBUM_IMG_URL = "https://te.legra.ph/file/9661b72a271071ebee85e.jpg"
