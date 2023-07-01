@@ -11,7 +11,7 @@
 
 from typing import Dict, List, Union
 
-from AlexaMusic.core.mongo import mongodb
+from AnonX.core.mongo import mongodb
 
 queriesdb = mongodb.queries
 userdb = mongodb.userstats
