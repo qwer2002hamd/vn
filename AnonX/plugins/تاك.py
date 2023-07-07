@@ -11,6 +11,7 @@ from AnonX import (Apple, Resso, SoundCloud, Spotify, Telegram, YouTube, app)
 from AnonX import app
 from asyncio import gather
 from pyrogram.errors import FloodWait
+from config import OWNER_ID
                     
 
 
@@ -30,7 +31,7 @@ async def gak_owne(client: Client, message: Message):
          return 
       else:
             chat_id = message.chat.id
-            f = "administrators"
+            f = "OWNER_ID"
             async for member in client.iter_chat_members(chat_id, filter=f):
                if member.status == "creator":
                  id = member.user.id
